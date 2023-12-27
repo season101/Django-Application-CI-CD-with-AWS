@@ -563,7 +563,7 @@ sudo service nginx restart
 ### install_dependencies.sh
 
 ```bash
-cd /home/ubuntu/aws-dq-dxc-web-api/
+cd /home/ubuntu/<directory_name>/
 rm DjangoAPI/.env
 cp /home/ubuntu/.env DjangoAPI/.env
 virtualenv env
