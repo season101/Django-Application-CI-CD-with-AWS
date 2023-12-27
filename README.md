@@ -34,7 +34,7 @@ The reference can be found in here:
 
 [python-dotenv](https://pypi.org/project/python-dotenv/)
 
-******\*\*******\*\*\*\*******\*\*******Example .env for project******\*\*******\*\*\*\*******\*\*******
+**Example .env for project**
 
 ```jsx
 TENANT=
@@ -153,8 +153,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/aws-dq-dxc-web-api
-ExecStart=/home/ubuntu/aws-dq-dxc-web-api/env/bin/gunicorn \
+WorkingDirectory=/home/ubuntu/<directoryName>
+ExecStart=/home/ubuntu/<directoryName>/env/bin/gunicorn \
           --access-logfile /home/ubuntu/logs/access.log \
 					--error-logfile /home/ubnuntu/logs/error.log \
           --workers 3 \
@@ -283,7 +283,7 @@ According to your preference select the deployment strategy. Usually this depend
 
 ### Deployment groups: Environment configuration
 
-This depends on the solution architecture if you have multiple instance configuration for redundancy purpose. For a single instance deployment select **\*\*\*\***\*\*\*\***\*\*\*\***Amazon EC2 instance**\*\*\*\***\*\*\*\***\*\*\*\*** and select the appropriate tag you created while setting up your instance.
+This depends on the solution architecture if you have multiple instance configuration for redundancy purpose. For a single instance deployment select **Amazon EC2 instance** and select the appropriate tag you created while setting up your instance.
 
 ![Untitled](Django%20Backend%20CI%20CD/Untitled%205.png)
 
